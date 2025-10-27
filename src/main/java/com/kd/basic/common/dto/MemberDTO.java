@@ -1,4 +1,4 @@
-package com.kd.basic.member;
+package com.kd.basic.common.dto;
 
 import java.util.Date;
 

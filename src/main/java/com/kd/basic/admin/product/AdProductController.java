@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.kd.basic.admin.category.AdCategoryService;
+import com.kd.basic.common.dto.ProductDTO;
 import com.kd.basic.common.utils.FileUtils;
 
 import jakarta.servlet.http.HttpServletRequest;

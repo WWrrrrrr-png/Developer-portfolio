@@ -15,6 +15,11 @@
 			document.getElementById("mbsp_password").focus();
 		}
 
+		// REST API
+		function fnClick() {
+			location.href = [[${location}]]
+		};
+
 	</script>
 </th:block>
 <th:block layout:fragment="content">
@@ -33,6 +38,9 @@
 				<div class="mb-3  text-center">
 					<button type="submit" class="btn btn-primary">Login</button>
 					<a href="/member/lostpass" class="btn btn-primary">ID/PW Search</a>
+					<a href="javascript:void(0)"  th:onclick="javascript:fnClick();" style="cursor: pointer;">
+						<img src="/image/sns/kakao_login_medium_wide.png">
+					</a>
 				</div>
 			</form>
 		</div>
