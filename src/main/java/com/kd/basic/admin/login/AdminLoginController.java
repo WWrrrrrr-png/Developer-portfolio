@@ -27,7 +27,7 @@ public class AdminLoginController {
 		
 		log.info("관리자로그인");
 		
-		return "/admin/ad_login";
+		return "admin/ad_login";
 	}
 	
 	@PostMapping("/admin_ok")
@@ -64,6 +64,6 @@ public class AdminLoginController {
 	@GetMapping("/ad_menu")
 	public String ad_menu() {
 		
-		return "/admin/ad_menu";
+		return "admin/ad_menu";
 	}
 }

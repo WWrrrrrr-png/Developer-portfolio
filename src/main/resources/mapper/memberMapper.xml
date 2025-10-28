@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kd.basic.member.MemberMapper">
 
-	<insert id="join" parameterType="com.kd.basic.member.MemberDTO">
+	<insert id="join" parameterType="com.kd.basic.common.dto.MemberDTO">
 	
 		insert into mbsp_tbl
 			(
@@ -39,7 +39,7 @@
 	
 	</select>
 	
-	<select id="login" resultType="com.kd.basic.member.MemberDTO" parameterType="String">
+	<select id="login" resultType="com.kd.basic.common.dto.MemberDTO" parameterType="String">
 	
 		select 
 			mbsp_id,
@@ -58,7 +58,7 @@
 	
 	</select>
 	
-	<select id="modify" resultType="com.kd.basic.member.MemberDTO" parameterType="String">
+	<select id="modify" resultType="com.kd.basic.common.dto.MemberDTO" parameterType="String">
 	
 		select 
 			mbsp_id,
@@ -79,7 +79,7 @@
 	
 	</select>
 	
-	<update id="modify_save" parameterType="com.kd.basic.member.MemberDTO">
+	<update id="modify_save" parameterType="com.kd.basic.common.dto.MemberDTO">
 	
 		update 
 			mbsp_tbl

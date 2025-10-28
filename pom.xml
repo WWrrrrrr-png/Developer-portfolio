@@ -84,7 +84,7 @@
 		    <artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
 		
-		<!--  HikariCP connection pool 지원. db연동 -->
+		<!--  HikariCP connection pool 지원. 트랜잭션 기능제공 -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-jdbc</artifactId>	    
@@ -123,6 +123,19 @@
 		    <artifactId>thumbnailator</artifactId>
 		    <version>0.4.20</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webflux -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webflux</artifactId>
+		</dependency>
+		
+
+	    <dependency>
+	        <groupId>io.netty</groupId>
+	        <artifactId>netty-all</artifactId>
+
+	     </dependency>
+
 	</dependencies>
 
 	<build>

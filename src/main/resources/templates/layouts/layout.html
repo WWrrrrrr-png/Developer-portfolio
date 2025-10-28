@@ -19,8 +19,7 @@
  
 <meta name="theme-color" content="#712cf9">
 
-
-    
+  
     
     <!-- Custom styles for this template -->
     <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
@@ -37,7 +36,9 @@
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
-    
+  	<!-- 1차 카테고리 영역 -->
+  	<th:block th:replace="~{fragments/categorymenu.html::category}"></th:block>
+    <!-- 컨덴츠 페이지 영역 -->
     <th:block layout:fragment="content"></th:block>
     
     

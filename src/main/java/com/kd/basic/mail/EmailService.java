@@ -44,13 +44,13 @@ public class EmailService {
         }
     }
 
-    // 단순 메시지를 포함한 메일 발송
+    // 단순 메시지를 포함한 메일 발송.  예>아이디찾기, 비밀번호 변경하기, 비밀번호 찾기 등.
     public void sendMail(String type, EmailDTO dto, String message) {
         String htmlContent = generateHtmlContent(message, type);
         sendEmail(dto, htmlContent);
     }
 
-    // 주문 내역을 포함한 메일 발송
+    // 주문 내역을 포함한 메일 발송.  List<Map<String, Object>> orderInfo
     public void sendMail(String type, EmailDTO dto, List<Map<String, Object>> orderInfo, int orderTotalPrice) {
         String htmlContent = generateOrderHtmlContent(orderInfo, orderTotalPrice, type);
         sendEmail(dto, htmlContent);
@@ -82,8 +82,11 @@ public class EmailService {
     // Thymeleaf를 사용한 HTML 컨텐츠 생성 (주문 내역)
     private String generateOrderHtmlContent(List<Map<String, Object>> orderInfo, int orderTotalPrice, String templateName) {
         Context context = new Context();
-        context.setVariable("order_info", orderInfo);
-        context.setVariable("order_total_price", orderTotalPrice);
+        
+        // Model 작업과 유사
+        context.setVariable("order_info", orderInfo); // 주문내역 List<Map>
+        context.setVariable("order_total_price", orderTotalPrice);  // 주문금액  String
+        
         return templateEngine.process(templateName, context);
     }
 }

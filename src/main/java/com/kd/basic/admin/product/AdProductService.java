@@ -2,6 +2,8 @@ package com.kd.basic.admin.product;
 
 import org.springframework.stereotype.Service;
 
+import com.kd.basic.common.dto.ProductDTO;
+
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
