@@ -18,7 +18,10 @@ public interface OrderMapper {
 	// 현재 주문내역.  테이블 조인으로 사용하는 메서드는 Map으로 리턴타입으로 사용한다.
 	List<Map<String, Object>> getOrderInfoByOrd_code(Integer ord_code);
 	
+<<<<<<< HEAD
 	// 주문번호 검색
 	OrderDTO findOrderById(@Param("ord_code") int ord_code);
 	
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 }

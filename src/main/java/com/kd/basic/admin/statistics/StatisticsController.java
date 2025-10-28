@@ -8,7 +8,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+<<<<<<< HEAD
 import java.util.stream.Collectors;
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -75,6 +78,7 @@ public class StatisticsController {
 		return ResponseEntity.ok(statisticsService.getMonthlyStatistics(year));
 	}
 	
+<<<<<<< HEAD
 	// 이번달 거래현황중 거래건수, 이번달 총매출금액, 이번달 카테고리 통계, 이번주 거래금액 통계.
 	@GetMapping("/dashboard")
 	public void dashboard(Model model) throws Exception {
@@ -131,6 +135,8 @@ public class StatisticsController {
 	}
 	
 	
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 	
 	
 }

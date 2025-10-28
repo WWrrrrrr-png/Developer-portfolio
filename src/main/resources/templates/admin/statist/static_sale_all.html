@@ -4,8 +4,18 @@
 	layout:decorate="~{admin/layouts/ad_layout}">
 
 	<th:block layout:fragment="script1">
+<<<<<<< HEAD
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+=======
+		
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+   	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+			
+		
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 	</th:block>
 
 	<th:block layout:fragment="content">
@@ -73,7 +83,10 @@
 
 			$(document).ready(function() {
 				
+<<<<<<< HEAD
 				// 월별 버튼에서 사용할 달력 환경설정.
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 				$("#yearpicker").datepicker({
 					changeYear: true,
 					showButtonPanel: true,
@@ -99,7 +112,11 @@
 				let type = 'daily';
 
 				// 옵션 영역 표시
+<<<<<<< HEAD
 				$(`#${type}Options`).show(); // 일자 버튼 클릭시 보여줄 달력표시
+=======
+				$(`#${type}Options`).show();
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 
 				// ----- 버튼 선택 상태 초기화 -----
 				// 모든 버튼을 비활성화 상태로 초기화
@@ -125,12 +142,19 @@
 				// 검색버튼 이벤트 설정.
 				$("#search").on("click", function() {										
 
+<<<<<<< HEAD
 					let url = `/admin/statist/${type}`; // 4개으 버튼중 하나를 선택했을 때 스프링에서 요청할 주소.
+=======
+					let url = `/admin/statist/${type}`;
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 					let labelName = "";
 
 					console.log("검색", url);
                 	
+<<<<<<< HEAD
 					// 4개의 버튼에 따라서 스프링으로 보내야 할 파라미터 작업.
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 					let params = {};
 
 					if (type == 'daily') { // 일자별 버튼 선택시

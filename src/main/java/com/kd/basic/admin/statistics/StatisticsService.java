@@ -28,6 +28,7 @@ public class StatisticsService {
 	public List<Map<String, Object>> getMonthlyStatistics(String year) {
 		return statisticsMapper.getMonthlyStatistics(year);
 	}
+<<<<<<< HEAD
 	
 	public int getMonthlyCount() {
 		return statisticsMapper.getMonthlyCount();
@@ -66,4 +67,6 @@ public class StatisticsService {
 	
 	
 	
+=======
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 }

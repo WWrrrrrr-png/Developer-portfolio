@@ -106,6 +106,7 @@
 	
 	</select>
 	
+<<<<<<< HEAD
 	<select id="getMonthlyCount" resultType="int">
 	
 		SELECT
@@ -206,6 +207,9 @@
 			    order_date
 		]]>
 	</select>
+=======
+	
+>>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 	
 	
 	
