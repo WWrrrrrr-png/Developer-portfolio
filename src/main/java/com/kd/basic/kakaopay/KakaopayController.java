@@ -101,21 +101,18 @@ public class KakaopayController {
 	@GetMapping("/cancel")
 	public String cancel() {
 		
-<<<<<<< HEAD
+
 		return "order/order_cancel";
-=======
-		return "/order/order_cancel";
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
 	}
 		
 	// 결제실패 매핑주소
 	@GetMapping("/fail")
 	public String fail() {
 		
-<<<<<<< HEAD
+
 		return "order/order_fail";
-=======
-		return "/order/order_fail";
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
+
 	}
 }

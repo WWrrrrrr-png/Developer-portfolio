@@ -27,11 +27,9 @@ public class ChatController {
     public ResponseEntity<String> ask(@RequestParam String question) {
     	ResponseEntity<String> entity = null;
     	
-<<<<<<< HEAD
+
     	entity = new ResponseEntity<String>(openAIService.handleUserMessage(question), HttpStatus.OK);
-=======
-    	entity = new ResponseEntity<String>(openAIService.askChatGPT(question), HttpStatus.OK);
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
     	
     	return entity;
     }

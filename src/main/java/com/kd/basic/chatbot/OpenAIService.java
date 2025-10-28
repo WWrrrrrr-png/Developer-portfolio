@@ -1,17 +1,16 @@
 package com.kd.basic.chatbot;
 
 import lombok.RequiredArgsConstructor;
-<<<<<<< HEAD
+
 import lombok.extern.slf4j.Slf4j;
 
-=======
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-<<<<<<< HEAD
+
 import com.kd.basic.common.dto.OrderDTO;
 import com.kd.basic.order.OrderMapper;
 
@@ -19,19 +18,15 @@ import java.text.SimpleDateFormat;
 import java.util.Collections;
 
 @Slf4j
-=======
-import java.util.Collections;
 
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
 @Service
 @RequiredArgsConstructor
 public class OpenAIService {
 
-<<<<<<< HEAD
+
 	private final OrderMapper orderMapper;
 	
-=======
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
     @Value("${openai.api-key}")
     private String apiKey;
 
@@ -66,7 +61,6 @@ public class OpenAIService {
                 .getMessage()
                 .getContent();
     }
-<<<<<<< HEAD
     
     public String handleUserMessage(String userMessage) {
     	
@@ -107,7 +101,6 @@ public class OpenAIService {
             return null;
         }
     }
-=======
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
 }
 

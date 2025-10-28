@@ -15,7 +15,7 @@ public interface StatisticsMapper {
 	
 	List<Map<String, Object>> getMonthlyStatistics(@Param("year") String year);
 	
-<<<<<<< HEAD
+
 	// 이번달 거래건수
 	int getMonthlyCount();
 	
@@ -33,6 +33,5 @@ public interface StatisticsMapper {
 	
 	// 이번주 거래금액 통계
 	List<Map<String, Object>> getThisWeekOrderAmount();
-=======
->>>>>>> bed03a1eb2ca4147e24be2d32365e4b5e5646844
+
 }
